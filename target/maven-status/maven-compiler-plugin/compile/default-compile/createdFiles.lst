@@ -1,0 +1,4 @@
+com\zto\demo\schedule\task\DataSyncABean.class
+com\zto\demo\config\TBScheduleJobConfig.class
+com\zto\demo\Application.class
+com\zto\demo\schedule\model\TaskModel.class

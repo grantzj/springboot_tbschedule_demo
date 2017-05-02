@@ -1,0 +1,15 @@
+1.TBSchedule控制台搭建
+下载：http://code.taobao.org/p/tbschedule/wiki/index/
+参考: http://blog.csdn.net/paul342/article/details/52191272
+      http://blog.csdn.net/yuchao2015/article/details/53033628
+下载ScheduleConsole.war之后发布到tomcat服务器上
+①Zookeeper连接配置,这个必须与application配置文件的中的内容一致
+Zookeeper地址 : 10.10.28.111:2181
+Zookeeper超时 : 60000
+Zookeeper根目录: /tb-schedule/dev
+Zookeeper用户 : admin
+Zookeeper密码 : admin
+
+2.启动Zookeeper之后，可以使用Zookeeper的客户端工具zkCli.sh来查看根目录下面的节点
+ls /tb-schedule/dev
+
