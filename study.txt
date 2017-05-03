@@ -32,3 +32,6 @@ ls /tb-schedule/dev
 
 5.Zookeeper如何删除有权限的节点
 
+6.扩展：
+写一个案列：使用TBSchedule来开发一个数据迁移的案列
+
