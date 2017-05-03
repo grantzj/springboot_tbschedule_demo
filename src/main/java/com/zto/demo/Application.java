@@ -14,7 +14,6 @@ import org.springframework.web.bind.annotation.RestController;
  * Spring会询问他
  *
  */
-@RestController
 @SpringBootApplication
 public class Application{
 		

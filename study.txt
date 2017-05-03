@@ -20,3 +20,15 @@ ls /tb-schedule/dev
 3.SpringBoot 使用 @Value 从 YAML文件读取属性
 在这里有个坑，就是冒号(:)与值之间必须要有空格，否则程序中的占位符无法识别
 
+4.Zookeeper客户端基本操作
+①帮助命令： help 查看Zookeeper客户端可以使用的命令
+②显示根目录下文件： ls / 使用 ls 命令来查看当前 ZooKeeper 中所包含的内容
+③显示根目录下、文件： ls2 / 查看当前节点数据并能看到更新次数等数据
+④创建文件，并设置初始内容： create /zk "test" 创建一个新的 znode节点“ zk ”以及与它关联的字符串
+⑤ 获取文件内容： get /zk 确认 znode 是否包含我们所创建的字符串
+⑥ 修改文件内容： set /zk "zkbak" 对 zk 所关联的字符串进行设置
+⑦删除文件： delete /zk 将刚才创建的 znode 删除
+⑧退出客户端： quit
+
+5.Zookeeper如何删除有权限的节点
+

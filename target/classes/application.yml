@@ -1,6 +1,6 @@
-logging:
-     level:
-          root: INFO
+logging:  
+  level:
+    root: INFO
     
 job:
    zkConfig:

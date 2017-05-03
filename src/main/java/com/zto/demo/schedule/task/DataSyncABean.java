@@ -11,7 +11,8 @@ import com.taobao.pamirs.schedule.IScheduleTaskDealSingle;
 import com.taobao.pamirs.schedule.TaskItemDefine;
 import com.zto.demo.schedule.model.TaskModel;
 
-@Component
+
+@Component("syncABean")
 public class DataSyncABean implements IScheduleTaskDealSingle<TaskModel>{
 	
 	private static final Logger LOG = Logger.getLogger(DataSyncABean.class);

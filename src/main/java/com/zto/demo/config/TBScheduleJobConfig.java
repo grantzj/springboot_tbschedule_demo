@@ -12,7 +12,10 @@ import com.taobao.pamirs.schedule.strategy.TBScheduleManagerFactory;
 @Configuration
 public class TBScheduleJobConfig {
 	
-	@Bean
+	/**
+	 *创建好Bean之后调用TBScheduleManagerFactory的初始化方法init()来进行初始化
+	 */
+	@Bean(initMethod="init")
 	public TBScheduleManagerFactory tbScheduleManagerFactory(
 			@Value("${job.zkConfig.zkConnectString}")String zkConnectString,
 			@Value("${job.zkConfig.rootPath}")String rootPath,
