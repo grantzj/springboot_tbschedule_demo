@@ -10,6 +10,10 @@ Zookeeper根目录: /tb-schedule/dev
 Zookeeper用户 : admin
 Zookeeper密码 : admin
 
-2.启动Zookeeper之后，可以使用Zookeeper的客户端工具zkCli.sh来查看根目录下面的节点
+2.启动Zookeeper之后，可以使用Zookeeper的客户端工具zkCli.sh来查看项目根据application.yml配置文件在
+根目录下面的节点
 ls /tb-schedule/dev
+
+3.SpringBoot 使用 @Value 从 YAML文件读取属性
+在这里有个坑，就是冒号(:)与值之间必须要有空格，否则程序中的占位符无法识别
 

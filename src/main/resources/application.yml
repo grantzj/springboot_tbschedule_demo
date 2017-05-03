@@ -1,13 +1,12 @@
-job:
-   zkConfig:
-         zkConnectString:10.10.28.111:2181
-         rootPath:/tb-schedule/dev
-         zkSessionTimeout:60000
-         userName:admin
-         password:admin
-         isCheckParentPath:true
-         
 logging:
      level:
-          root:INFO
-              
+          root: INFO
+    
+job:
+   zkConfig:
+         zkConnectString: 10.10.28.111:2181
+         rootPath: /tb-schedule/dev
+         zkSessionTimeout: 60000
+         userName: admin
+         password: admin
+         isCheckParentPath: true          

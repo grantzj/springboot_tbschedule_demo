@@ -12,7 +12,7 @@ import com.taobao.pamirs.schedule.strategy.TBScheduleManagerFactory;
 @Configuration
 public class TBScheduleJobConfig {
 	
-	@Bean(initMethod="init")
+	@Bean
 	public TBScheduleManagerFactory tbScheduleManagerFactory(
 			@Value("${job.zkConfig.zkConnectString}")String zkConnectString,
 			@Value("${job.zkConfig.rootPath}")String rootPath,
